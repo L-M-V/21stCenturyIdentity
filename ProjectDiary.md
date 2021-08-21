@@ -138,3 +138,18 @@ Changing datasets after they've been collected (living datasets) - changing your
 A glimpse into the future of data privacy:
 
 
+---
+# Literature Review
+
+## Existing Working Groups / Solutions
+ESSIF - European Self Sovereign Identity Framework
+https://essif-lab.eu/
+
+Data61 - https://data61.csiro.au/en/Our-Research/Our-Work/Safety-and-Security/Privacy-Preservation/De-identification-Decision-Making-Framework
+
+How Sovrin Works
+https://sovrin.org/wp-content/uploads/2018/03/How-Sovrin-Works.pdf
+
+---
+
+8:24pm: Wrote introduction paragraph and structure
