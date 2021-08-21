@@ -155,3 +155,5 @@ https://sovrin.org/wp-content/uploads/2018/03/How-Sovrin-Works.pdf
 8:24pm: Wrote introduction paragraph and structure
 
 10:40pm: Finished writing identity overview
+
+1:24am: Initial Draft of the Employment Workflow

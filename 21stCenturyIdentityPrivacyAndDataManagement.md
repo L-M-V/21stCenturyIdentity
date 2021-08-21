@@ -52,7 +52,15 @@ This identity management is seen in technologies such as OpenID, OAuth and Faceb
 
 ![Self-Sovereign Identity](Images/SelfSovereignIdentity.svg)
 
-Drummond Reed at Evernym defines SSI as a “lifetime portable identity for any person, organisation, or thing that does not depend on any centralised authority and can never be taken away". Self-Sovereign Identity expands upon User-Centric Identity idea - placing the user directly in control of their own credentials in a digital wallet. The specific workings of this technology will be expanded in the following sections. 
+Drummond Reed at Evernym defines SSI as a “lifetime portable identity for any person, organisation, or thing that does not depend on any centralised authority and can never be taken away". Self-Sovereign Identity expands upon User-Centric Identity idea - placing the user directly in control of their own credentials in a digital wallet. 
+
+**Issuers** can provide credentials that can be placed in the wallet. These credentials can then be broken up into sub-parts and sent to **organisations**. Organisations can then verify these credentials independently by querying the blockchain. 
+
+#### 1.2.4.1 Self-Sovereign Example: 
+
+A user wishes to enter a bar which requires the user to be over the age of 18. The user gets the government (issuer) to provide a driver's licence credential to the user. The user can break this credential into sub parts such as name, date of birth and address. This data can also be transformed, such as turning the date of birth into "user is over 18" flag. The user then shows this and only this flag to the bar (organisation). The bar can then verify that flag is valid by checking the relevant cryptographic information on the blockchain. Once verified, the user is now allowed into the bar. No additional private information is provided to the organisation. 
+
+The specific workings of this technology will be expanded in the following sections. 
 
 ### 1.2.5 Chapter References: 
 
@@ -81,6 +89,8 @@ John Phillips. Interview. 2018. Australian Payments Summit. "[Self Sovereign Ide
 
 
 
+
+
 # Current Software Solutions
 
 ## Sovrin
@@ -88,21 +98,48 @@ John Phillips. Interview. 2018. Australian Payments Summit. "[Self Sovereign Ide
 ## ESSIF - European Self Sovereign Identity Framework
 
 
-# Dataset Case Studies - A Glimpse at the Future
+# Chapter Four: Dataset Case Studies - A Glimpse at the Future
 
-## Re-imaginging Employment
+## 4.1 Re-imagining Employment
 
+### 4.1.1 A sovereign workflow
 
+*Author's Note: This example uses the tutorial provided by the HyperLedger Indy Project as a basis before expanding it out to include further government employment outcomes.*
 
+**Luke**, an aspiring software engineer has just graduated from **Programming University**. He wishes to apply to all relevant jobs that fit his skill-sets. Can a Self-Sovereign Identity framework help him?
 
+![Create Wallet](Images/CreateWallet.svg)
+
+Luke begins by creating a **digital wallet** which will be used to store his credentials and cryptographic data. This wallet has a *link secret* which will be used to guarantee that all **credentials** stored in the wallet are *uniquely identifiable* as Luke's. This functionality will provided by an application on Luke's phone.
+
+As in real life, the usefulness and reliability of a credential is tied directly to the reputation of the issuer of the credential. While it would be fun to create a driver's licence with a graphics editor and a household printer, no-one would take it seriously in real life. Similarly in self-sovereign identity, it would be fine for Luke to create a name or phone number credential in his wallet, but it would be less impressive to create an academic transcript without proof. 
+
+![Download Transcript](Images/DownloadTranscript.svg)
+
+To improve Luke's chances of getting a job, we must request a **"Transcript"** credential from Programming University. Luke first wonders what information is contained in the **Transcript**. Thankfully for an **issuer** to provide a **credential**, there must be an associated **schema** written to the **verification ledger**. Luke uses the app to query the ledger and finds that the **Programming University** provides the following information *"firstName", "lastName", "degree", "status", "year", "academicAverage"* in its **Transcript** credential. Luke downloads this credential into his wallet. 
+
+Luke then finds that **"GovHack"** is hiring for a beginning software position. Luke accesses the **GovHack** application page which prompts Luke for a job application **proof**. This proof requests the following information:
+- Attributes:  *"firstName", "lastName", "phoneNumber", "degree", "status"*.
+- Predicate: *"academicAverage > 70"*
+- Restrictions: *"degree", "status", "academicAverage"* require **Programming University** verification
+
+This proof explores a few concepts crucial to the academic. Firstly, only some of the attributes are required to be verified. This allows Luke to fill in his first and last names and phone number (by providing his own credentials), however all of the remaining data must be verified. Secondly, the proof requires a predicate or condition of a high academic average, but not necessarily a distinct value. 
+
+![Job Application](Images/JobApplication.svg)
+
+Luke's application now automatically prefills all this data from his previously downloaded transcript credential and fills in the phone number field as it doesn't currently exist. He clicks the submit button and GovHack receives a complete job application, including already-verified information containing his academic average and degree. Behind the scenes, GovHack's own system queries the ledger and ensures that the transcript credential is provided by the trusted Programming University. 
+
+### 4.1.2 Exploring the Data Skills Dataset
+
+Consider now that any credential can be verified by any registered party. Government already provides certification of education 
 
 
 Chapter References:
 https://github.com/hyperledger/indy-sdk/blob/master/docs/getting-started/indy-walkthrough.md
 
-## Covid-19
 
-## Health
+
+## Covid-19
 
 ## Data Collection / Surveys
 
