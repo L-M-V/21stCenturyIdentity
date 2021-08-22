@@ -5,8 +5,8 @@ A Digital identity revolution is coming. Self-Sovereign Identity (SSI) is a comp
 This document is broken down into chapters.
 - Chapter one explains digital identities and how they have evolved over time.
 - Chapter two explores current issues with identity and personal data management. 
-- Chapter three investigates Self-Sovereign Identity software solutions, blockchains and the application layer which could sit on top. 
-- Chapter four looks at government datasets and data flows and how they could be implemented through a SSI foundation.
+- Chapter three investigates current Self-Sovereign Identity software solutions and initiatives.
+- Chapter four looks at government datasets and data flows and how they could be implemented through a SSI framework.
 - Chapter five summarises the findings.
 
 # Chapter One: The Evolution of Identity
@@ -74,23 +74,58 @@ Jordon, Ken, Jan Hauser, and Steven Foster. 2003. [“The Augmented Social Netwo
 
 John Phillips. Interview. 2018. Australian Payments Summit. "[Self Sovereign Identity](https://www.auspaynet.com.au/insights/Blog/Self-Sovereign-Identity)"
 
-# Issues with the Current System
+# Chapter Two: Issues and Risks with the Identity Frameworks
 
-<ins>Risks</ins>
+## 2.1 Concerns with Traditional Identity Frameworks
 
-**Data Silos** - Large Centralised Identity providers have access to millions of digital identities which makes them a target. (For example Yahoo and Equifax Data Breaches.)
+### 2.1.1 Data Silos
+Large Centralised Identity providers have access to millions of digital identities which makes them a target. (For example Yahoo and Equifax Data Breaches.)
 
-**Lack Of Transparency** - How is user data being used? (Is it marketing? Political Analysis?).  Is it being transferred to additional third parties?  (Facebook–Cambridge Analytica data scandal)
+### 2.1.2 Lack Of Transparency 
+How is user data being used? (Is it marketing? Political Analysis?).  Is it being transferred to additional third parties?  (Facebook–Cambridge Analytica data scandal)
 
-**Re-Identification of other Data Sets** - By cross-referencing information contained in their databases, centralised providers may be able to reidentify existing public datasets. 
+### 2.1.3 Re-Identification of other Data Sets
+By cross-referencing information contained in their databases, centralised providers may be able to reidentify existing public datasets. 
 
+In fact the government has been using CSIRO Data61's Personal Information Factor(PIF) tool to analyse all publicly provided datasets risk of de-identification and apply appropriate levels of protection before the data is released.
 
-# Current Software Solutions
+References:
 
-## Sovrin
+CSIRO Data61. "[A framework for data de-identification](https://data61.csiro.au/en/Our-Research/Our-Work/Safety-and-Security/Privacy-Preservation/De-identification-Decision-Making-Framework)
 
-## ESSIF - European Self Sovereign Identity Framework
+Alison Donnellan. CSIRO Data61. "[This new data privacy tool is ensuring anonymous COVID-19 data stays secure and private](https://algorithm.data61.csiro.au/this-new-data-privacy-tool-is-ensuring-anonymous-covid-19-data-stays-secure-and-private/)"
 
+## 2.2 Key-Loss Concerns with Self-Sovereign Identity Frameworks
+
+There are some concerns with the self-sovereign identity with regards to loss of keys or digital for a person's identity. If the person loses access to their wallet, then all stored credentials become inaccessible. However there exist solutions to mitigate this risk:
+
+### 2.2.1 Centralised Key Management Systems
+
+Cloud Storage or automatic offline-backups could be used to host back-up key repositories that can be used to back-up keys and credentials.  This could be inbuilt into the wallet software itself, however wallet providers must provide clear rules on how keys can be retrieved and what mechanisms are in place for data security. Online cloud storage faces much of the same risks as a traditional identity framework. 
+
+### 2.2.2 Decentralised Key Management System
+
+A private key can be broken up into a number of parts using a Shamir Secret Sharing Protocol. For example: If the user splits their key into 10 pieces and gives them to their family and friends, then they can reproduce their secret key by retreiving combining at least 5 of these pieces. Again this could integrated into the wallet software.
+
+# Chapter Three: Current Software Solutions and Initiatives
+
+## 3.1 Sovrin, Evernym and Hyperledger Indy
+
+Sovrin is currently the leading open-source self-sovereign identity public ledger. It markets itself as _"public permissioned"_ distributed ledger design. Whereby anyone can use the Sovereign network for credential management, only trusted individuals or organisations can provide credentials. An analogy they use is that it similar to the global ATM network - any user can use a provided ATM but only those who have permission can add a new ATM to the network. This is very different to _"permissionless"_ ledgers such as Bitcoin and Etherum where anyone can join the network. No mining is required for permission based ledgers, as trust is provided by the foundation's verification and attackers cannot perform a 51% attack to control the ledger.  Further information about the organisation can be found in Sovrin's white paper "[The Inevitable Rise of Self-Sovereign Identity](https://sovrin.org/wp-content/uploads/2018/03/The-Inevitable-Rise-of-Self-Sovereign-Identity.pdf)".
+
+Sovrin's main ledger was originally operated by a company called Evernym before entrusting it to the Sovrin Foundation. Evernym realised that a public open-access foundation was better suited to original ideas of self-sovereign identity rather than a private ledger company. Evernym also understood that developers were key to improving and driving adoption of public ledger technologies and open-sourced all ledger source code in the Hyperledger Indy project.
+
+Hyperledger Indy is an open-source ledger technology that can be deployed individually or by organisations who wish to run their own self-sovereign identity management ledgers. 
+
+The Sovrin Network - "[Sovrin Foundation](https://sovrin.org)"
+
+HyperLedger Indy - Distributed Ledger Software "[HyperLedger Indy](https://www.hyperledger.org/use/hyperledger-indy)"
+
+## 3.2 ESSIF - European Self Sovereign Identity Framework
+
+The European Self-Sovereign Identity Framework Lab is an EU-funded project looking to advance the broad uptake of Self-Sovereign Identities. They are offering **5.6 million euros** across 62 projects.
+
+"[European Self Sovereign Identity Framework](https://essif-lab.eu/)"
 
 # Chapter Four: Dataset Case Studies - A Glimpse at the Future
 
@@ -169,26 +204,18 @@ This exposure list site could also be used as a verification step when entering 
 
 Dataset: [All Victorian SARS-CoV-2 (COVID-19) current exposure sites](https://discover.data.vic.gov.au/dataset/all-victorian-sars-cov-2-covid-19-current-exposure-sites)
 
-## Vaccine Passport
+## 4.3 Vaccine Passport
 
+The use of a Self-Sovereign Identity system would also perfectly match the use-case of digital vaccine passports. When a user is vaccinated, a digital vaccination record is stored in their wallet. This contains all the relevant information such as type of vaccine, time and date - it can also be verified cryptographically as it provided by a trusted source - the health department. 
 
+When the user wishes to attend an event, airline or a workplace which has a vaccine-requirement as a condition of entry, they can simply scan a QR code at the event, respond to the proof request "Are you fully vaccinated?" and transfer a simple yes or no answer to the establishment. The user provides no medical information to the venue, but the venue/airline/organisation can have trust that the user is vaccinated as the credential is signed. 
 
-
-
-
-
-Chapter References:
-
-
-
-
-## Data Collection / Surveys
-
-## Privacy Accounting
-
-# Concerns
+References: 
+"[Immunity credentials using self-sovereign identity for combating COVID-19 pandemic](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7983450/)"
 
 # Summary
+
+
 
 <sup id="a1">[1](#identrev)</sup>
 
