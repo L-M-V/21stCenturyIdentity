@@ -1,6 +1,6 @@
 # 21st Century Identity, Privacy and Data Management
 
-A Digital identity revolution is coming. Self-Sovereign Identity (SSI) is a complete inversion of current identity management, giving granular control of personal data to the user. This has exciting and broad ramifications for user privacy, data collection and data transfer. How can governments and organisations  both facilitate and make use of this new model of identity and personal information transfer and management?
+A Digital identity revolution is coming. Self-Sovereign Identity (SSI) is a complete inversion of current identity management, giving granular control of personal data to the user. This has exciting and broad ramifications for user privacy, data collection and data transfer. How can governments and organisations  both facilitate and make use of this new model of identity and user privacy?
 
 This document is broken down into chapters.
 - Chapter one explains digital identities and how they have evolved over time.
@@ -8,9 +8,6 @@ This document is broken down into chapters.
 - Chapter three investigates Self-Sovereign Identity software solutions, blockchains and the application layer which could sit on top. 
 - Chapter four looks at government datasets and data flows and how they could be implemented through a SSI foundation.
 - Chapter five summarises the findings.
-
-
-Questions: What is your identity? How do you prove your identity? How do you trust another person's identity? How does the government use your identity? How does the government user your data to provide services?
 
 # Chapter One: The Evolution of Identity
 
@@ -88,9 +85,6 @@ John Phillips. Interview. 2018. Australian Payments Summit. "[Self Sovereign Ide
 **Re-Identification of other Data Sets** - By cross-referencing information contained in their databases, centralised providers may be able to reidentify existing public datasets. 
 
 
-
-
-
 # Current Software Solutions
 
 ## Sovrin
@@ -104,7 +98,7 @@ John Phillips. Interview. 2018. Australian Payments Summit. "[Self Sovereign Ide
 
 ### 4.1.1 A sovereign workflow
 
-*Author's Note: This example uses the tutorial provided by the HyperLedger Indy Project as a basis before expanding it out to include further government employment outcomes.*
+*Author's Note: This example uses the tutorial provided by the HyperLedger Indy Project as a foundation before expanding it out to include further government employment outcomes.*
 
 **Luke**, an aspiring software engineer has just graduated from **Programming University**. He wishes to apply to all relevant jobs that fit his skill-sets. Can a Self-Sovereign Identity framework help him?
 
@@ -116,30 +110,77 @@ As in real life, the usefulness and reliability of a credential is tied directly
 
 ![Download Transcript](Images/DownloadTranscript.svg)
 
-To improve Luke's chances of getting a job, we must request a **"Transcript"** credential from Programming University. Luke first wonders what information is contained in the **Transcript**. Thankfully for an **issuer** to provide a **credential**, there must be an associated **schema** written to the **verification ledger**. Luke uses the app to query the ledger and finds that the **Programming University** provides the following information *"firstName", "lastName", "degree", "status", "year", "academicAverage"* in its **Transcript** credential. Luke downloads this credential into his wallet. 
+To improve Luke's chances of getting a job, we must request a **"Transcript"** credential from Programming University. Luke first wonders what information is contained in the **Transcript**. Thankfully for an **issuer** to provide a **credential**, there must be an associated **schema** written to the **verification ledger**. Luke uses the app to query the ledger and finds that the **Programming University** provides the following information *"firstName", "lastName", "degree", "status", "year", "academicAverage"* in its **Transcript** credential - perfect for future job applications. It is important to note this in this example that Luke had already previous verified to the university of his name, date of birth, email address in a traditional physical process. The university already *knows* who Luke is and has provided a unique way (most likely via a link in email) for him to download his transcript. In the future, perhaps Luke can provide his government ID as a credential directly to the university. Luke then downloads this credential into his wallet. 
 
 Luke then finds that **"GovHack"** is hiring for a beginning software position. Luke accesses the **GovHack** application page which prompts Luke for a job application **proof**. This proof requests the following information:
 - Attributes:  *"firstName", "lastName", "phoneNumber", "degree", "status"*.
 - Predicate: *"academicAverage > 70"*
 - Restrictions: *"degree", "status", "academicAverage"* require **Programming University** verification
 
-This proof explores a few concepts crucial to the academic. Firstly, only some of the attributes are required to be verified. This allows Luke to fill in his first and last names and phone number (by providing his own credentials), however all of the remaining data must be verified. Secondly, the proof requires a predicate or condition of a high academic average, but not necessarily a distinct value. 
+This proof explores a few concepts crucial to the sovereign identity model. Firstly, only some of the attributes are required to be verified. This allows Luke to fill in his first and last names and phone number (by providing his own credentials), however all of the remaining data must be verified. Secondly, the proof requires a predicate or condition of a high academic average, but not necessarily a distinct value. Thirdly, there is no reason for all satisfying information to come from one credential - a user can mix and match credentials from different sources as long as they satisfy the restrictions listed in the proof request. 
 
 ![Job Application](Images/JobApplication.svg)
 
-Luke's application now automatically prefills all this data from his previously downloaded transcript credential and fills in the phone number field as it doesn't currently exist. He clicks the submit button and GovHack receives a complete job application, including already-verified information containing his academic average and degree. Behind the scenes, GovHack's own system queries the ledger and ensures that the transcript credential is provided by the trusted Programming University. 
+Luke's phone application now automatically prefills all this data from his previously downloaded transcript credential and fills in the phone number field as it doesn't currently exist. He clicks the submit button and GovHack receives a complete job application, including already-verified information containing his academic average and degree. Behind the scenes, GovHack's own system queries the ledger and ensures that the transcript credential is provided by the trusted Programming University. Luke can also track inside his phone application all private data that he has provided in the past. 
+
+It is important to note that *no personal information* is stored on the ledger itself. The ledger is a public record, filled with psudeoanonymous data and verifiable identifiers but all transfer of data is done directly between parties. Verification of credentials can be down without generating a transaction on the chain which guarantees that there is no traceability of verification. 
+
+References: 
+https://github.com/hyperledger/indy-sdk/blob/master/docs/getting-started/indy-walkthrough.md
 
 ### 4.1.2 Exploring the Data Skills Dataset
 
-Consider now that any credential can be verified by any registered party. Government already provides certification of education 
+Consider now the impact that having instantly verifiable chains of credentials can have. Government and other organisations (such as Engineers Australia) already provide certification of various educational institutions. As part of this certification, they could also grant particular institutions the ability to include various taught skill-sets/specialist tasks on their digital academic transcripts. When the user downloads their transcripts, an additional credential is now automatically downloaded and filled with all relevant skills. Potential employers could then specify required specific specialist tasks on their job application proofs to ensure they get the right candidates. Candidates could self-verify a particular skill if needed and verification could be performed in a traditional interview. However employers could prefer candidates with their skill-set is accredited by the an educational organisation. Employers could also verify skill-sets for their employees as they learn on the job, smoothing out the "getting a reference" issue or improving the apprentice-ship system. 
+
+By turning the Australia Skills Classification into an automatic system which can be viewed and processed in your digital wallet, it would remove a lot of friction between changing careers or determining the value of an additional qualification. 
+
+Dataset: [Australian Skills Classification data](https://www.nationalskillscommission.gov.au/our-work/australian-skills-classification)
+
+## 4.2 Covid-19 
+
+The current check-in system relies on the user scanning the QR code on entry. The user's name and phone-number are then uploaded to an unknown system. The user then relies on the government taking proper data security precautions with the invaluable location data and also preventing it from being accessed by third parties or even other departments. There has been issues where police have requested access to use this health data for investigations. 
+
+Let's now imagine how this system could be implemented when a self-sovereign identity system. In a basic naive implementation, it would work almost identically to how it does now. Your phone would pull up your identity credentials (such a one provided by your driver's license) and automatically fill in the store login proof request and send that proof to the current QR tracking system. 
+
+However we could implement a system whereby our location data is not transmitted. When the user checks in via QR code, we are now provided a verified credential listing the time and date of the check-in and a unique location identifier and we store that in the digital wallet. This credential can be used within the application to provide proof of check-in. A signed anonymous identifier could be transferred to the government for aggregate data collection. Now let's examine what would happen in the event of an outbreak:
+
+Data.Vic's "Victorian SARS-CoV-2 (COVID-19) current exposure sites" uses the following metadata headers:
+
+- Suburb
+- Site_title
+- Site_streetaddress
+- Site_state
+- Site_postcode
+- Exposure_date_dtm 
+- Exposure_date 
+- Exposure_time 
+- Notes
+- Added_date_dtm
+- Added_date
+- Added_time
+- Advice_title
+- Advice_instruction 
+- Exposure_time_start_24
+- Exposure_time_end_24
+
+These can easily be turned into a request for proof against the user's private wallet, by converting the exposure location into predicate (distance < 100m) for instance and matching the (exposure_date/exposure_time) against our check-in time. I expect it is much easier in practice, as the government could formulate a request with a matching unique location identifier for the chosen store. It is important to note it is still up to the user if they then wish to inform the government. All Self-Sovereign identity requests must have **consent** - a fundamental philosophy of the platform. If consent is not given, then no data can be transferred. In practice, this is not much different than providing a fake name or number to the Covid-19 QR sign-in. However in our example, there is one positive - the user is informed that they match the exposure site without them providing any name or number. 
+
+This exposure list site could also be used as a verification step when entering sensitive locations. When entering a hospital at the moment, a list of the current exposure sites is located at the entrance. The person at the desk then asks if you've been to any of these locations recently, and it's up to person to quickly parse all of the locations and work out if they've been to any of them. Instead a request for proof could be quickly compared against the user's digital wallet and it would immediately flag any potential crossover between the user's location data and the exposure sites - again without any unnecessary communication of private information. 
+
+Dataset: [All Victorian SARS-CoV-2 (COVID-19) current exposure sites](https://discover.data.vic.gov.au/dataset/all-victorian-sars-cov-2-covid-19-current-exposure-sites)
+
+## Vaccine Passport
+
+
+
+
+
 
 
 Chapter References:
-https://github.com/hyperledger/indy-sdk/blob/master/docs/getting-started/indy-walkthrough.md
 
 
 
-## Covid-19
 
 ## Data Collection / Surveys
 

@@ -156,4 +156,10 @@ https://sovrin.org/wp-content/uploads/2018/03/How-Sovrin-Works.pdf
 
 10:40pm: Finished writing identity overview
 
+# Sunday
+
 1:24am: Initial Draft of the Employment Workflow
+
+4:00am: First section of COVID-19 workflow. Bed
+
+10:00am: Second section of COVID-19 workflow.
