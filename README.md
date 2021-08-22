@@ -1,6 +1,6 @@
 # 21st Century Identity, Privacy and Data Management
 
-A Digital identity evolution is coming. Self-Sovereign Identity (SSI) is a complete inversion of current identity management, giving granular control of personal data to the user. This has exciting and broad ramifications for user privacy, data collection and data transfer. How can governments and organisations  both facilitate and make use of this new model of identity and user privacy?
+A digital identity evolution is coming. Self-Sovereign Identity (SSI) is a complete inversion of current identity management, giving granular control of personal data to the user. This has exciting and broad ramifications for user privacy, data collection and data transfer. How can governments and organisations  both facilitate and make use of this new model of identity and user privacy?
 
 This document is broken down into chapters.
 - Chapter one explains digital identities and how they have evolved over time.
