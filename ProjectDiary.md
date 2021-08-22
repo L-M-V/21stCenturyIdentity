@@ -167,3 +167,5 @@ https://sovrin.org/wp-content/uploads/2018/03/How-Sovrin-Works.pdf
 11:20am: Finish Section on Identity Framework Risks
 
 12:10pm: Finish Summary Section
+
+1:20pm: First part of Video Plan
