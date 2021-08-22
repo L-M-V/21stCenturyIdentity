@@ -235,3 +235,4 @@ Further application layers can be built on top of the credentials. Once identity
 
 
 
+[Icons provided by the material icons project by Google](https://fonts.google.com/icons)

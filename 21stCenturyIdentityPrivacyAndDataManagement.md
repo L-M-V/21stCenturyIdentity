@@ -234,4 +234,4 @@ The ledger is publicly available and verification is not facilitated by one corp
 Further application layers can be built on top of the credentials. Once identity is securely established further communication can be performed such as sharing additional information through off-ledger communication such as surveys, census and other data-collection which would be inherently move valuable as there is a public verification of claims. 
 
 
-
+[Icons provided by the material icons project by Google](https://fonts.google.com/icons)
