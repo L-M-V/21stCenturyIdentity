@@ -10,18 +10,42 @@ Building Citizen’s Trust in this Digital World
 In order to access online services, citizens need to give their consent for their data to be used. How do you gain their trust that their data will be used appropriately? 
 
 Narration:
-Hello this is Luke from Team "Secure Identity" and my project is 21st century Identity, Privacy and Data Management. 
+Hello this is Luke from Team "Secure Identity" and my project is 21st Century Identity, Privacy and Data Management. 
 
-My presentation revolves around these two questions. How can we bring our identities and associated private data into the digital 21st Century? 
+My presentation revolves around these two questions. How can we bring our identities and associated private data into the 21st Century? 
 
-The answer - Self Sovereign Identity. A blockchain powered privacy ledger that provides identity and credential verification. My project is a  research document establishing what is Self-Sovereign Identity, how does it work and how can it be mapped to existing government services?  
+The answer - Self Sovereign Identity or SSI. SSI is a blockchain powered privacy ledger that provides identity and credential verification. My project is a research document establishing what is Self-Sovereign Identity, how does it work and how can it be mapped to existing government services.
 
-But first we must look at the status quo, how is Self Sovereign Identity different to digital identities managed in today's society?
+Slide: Traditional Identity Examples
+
+Self Sovereign Identity is different from traditional identity management because it is decentralised and the private data is owned by the user.
+Traditional Identity is heavily controlled by individual identity providers which lead them open to attacks and have a distinct lack of transparency in how user data is managed. 
+
+Slide: How does Self Sovereign Identity WOrk 
+
+How does a blockchain SSI work? More comprehensive examples are included in the research document, but for the sake of brevity I'll cover the basics here.
+There are three main roles: Issuers, Users and Provers. 
+
+Issuers create digital credentials and add anonymous information to the block chain so that these credentials can be later verified. 
+
+Users - These have a digital wallet which can store requested credentials and respond to proof requests.
+
+Provers - Provers ask users for credential proof when the user attempts to use a service. The user supplies the credential and the prover then consults the block chain to verify that the credential is valid and issued by a trusted authority. 
+
+Credentials do not have to stay as a single immutable block, they can be broken down into smaller parts and the internal data can be mixed and matched across multiple credentials without effecting verification.Credentials can be time-limited and automatically revoked. 
+
+Slide: Enhancing User Privacy
+
+How can SSI be used by governments and to enhance User Privacy and enforce appropriate use of their data? Because all credentials must be explicitly requested from the user, the user can track, log and accept or reject each request. This consent is registered anonymously on the blockchain itself, allowing the parties to independently verify that consent was achieved before data was transferred. Personal data can be transformed (reducing data birth to an over 18 flag for instance) or reduced to only provide necessary information. Governments have a verification chain of where data originated, and citizens have complete ownership of their personal data. No identifiable personal data is stored on the ledger.
+
+In my research document I cover a few example government use cases such as employment and covid-19 check-ins. So where to next? SSI is being actively developed and has seen a huge uptake in the last few years due to the explosion of blockchain technologies and pressure for verifiable vaccine passports. The European Union has invested 5.6 million Euros in the European Self Sovereign Identity Framework over the last couple of years as it looks to provide a government back identity framework for all Europeans. One question remains: How will the Australian And New Zealand Governments take advantage of the next step in digital identity?
+
+Slide: Thank you
+
+Thank you to GovHack and all of the data providers and mentors for the great weekend. Cheers. 
 
 
-Slide: 
 
-How does a blockchain SSI like opensource Hyperledger Indy work? More comprehensive examples are included in the research document, but for the sake of brevity I'll cover the basics here. The system has Issuers which can provide credentials and write anonymous cryptographic registration information onto the blockchain for later verification, Users And Digital Wallets which requests and manage their own credentials. Credentials can be broken down into smaller parts and data mixed and matched across multiple credentials without effecting verification and provers, who request credential proof when accessing services / organisations. Once the user supplies a credential, the prover consults the block chain and uses the original registration information to verify that the credential was issued by a trusted authority.
 
 
 
@@ -47,3 +71,4 @@ Blockchain SSI works similarly, we first receive a credential from a trusted sou
 
 
 
+I believe one of the greatest improvements in the flexibility and security that the SSI provides to users. Your driver's licence credential (its number alone) can instantly be used as verification across any number of government services, your vaccine status can provide access to events and businesses without revealing any other medical information. And this is just the credential layer - applications can be built on top once you have established secure communication. 

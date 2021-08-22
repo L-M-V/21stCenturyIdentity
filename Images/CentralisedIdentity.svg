@@ -1,57 +1,275 @@
-<svg width="85.789mm" height="46.546mm" version="1.1" viewBox="0 0 85.789 46.546" xmlns="http://www.w3.org/2000/svg">
- <defs>
-  <marker id="marker1555" overflow="visible" orient="auto">
-   <path transform="matrix(-.8 0 0 -.8 -10 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill-rule="evenodd" stroke="#000" stroke-width="1pt"/>
-  </marker>
-  <marker id="marker1513" overflow="visible" orient="auto">
-   <path transform="matrix(-.8 0 0 -.8 -10 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill-rule="evenodd" stroke="#000" stroke-width="1pt"/>
-  </marker>
-  <marker id="marker1477" overflow="visible" orient="auto">
-   <path transform="matrix(-.8 0 0 -.8 -10 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill-rule="evenodd" stroke="#000" stroke-width="1pt"/>
-  </marker>
-  <marker id="Arrow1Lend" overflow="visible" orient="auto">
-   <path transform="matrix(-.8 0 0 -.8 -10 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill-rule="evenodd" stroke="#000" stroke-width="1pt"/>
-  </marker>
- </defs>
- <g transform="translate(-.17009 -.094494)">
-  <text x="57.274021" y="18.464136" fill="#000000" font-family="Calibri" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="57.274021" y="18.464136">Organisation</tspan></text>
-  <g transform="matrix(.52917 0 0 .52917 65.403 .094494)">
-   <path d="m0 0h24v24h-24z" fill="none"/>
-   <path d="m6.5 10h-2v7h2zm6 0h-2v7h2zm8.5 9h-19v2h19zm-2.5-9h-2v7h2zm-7-6.74 5.21 2.74h-10.42l5.21-2.74m0-2.26-9.5 5v2h19v-2z"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="87.789001mm"
+   height="46.546001mm"
+   version="1.1"
+   viewBox="0 0 87.789 46.546"
+   id="svg16912"
+   sodipodi:docname="CentralisedIdentity.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata16916">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     id="namedview16914"
+     showgrid="false"
+     inkscape:zoom="0.96841279"
+     inkscape:cx="162.12095"
+     inkscape:cy="87.960948"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg16912" />
+  <defs
+     id="defs16840">
+    <marker
+       id="marker1555"
+       overflow="visible"
+       orient="auto"
+       style="overflow:visible">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path16828"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt" />
+    </marker>
+    <marker
+       id="marker1513"
+       overflow="visible"
+       orient="auto"
+       style="overflow:visible">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path16831"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt" />
+    </marker>
+    <marker
+       id="marker1477"
+       overflow="visible"
+       orient="auto"
+       style="overflow:visible">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path16834"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt" />
+    </marker>
+    <marker
+       id="Arrow1Lend"
+       overflow="visible"
+       orient="auto"
+       style="overflow:visible">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path16837"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt" />
+    </marker>
+  </defs>
+  <g
+     transform="translate(-0.17009,-0.09449543)"
+     id="g16910">
+    <text
+       x="57.274021"
+       y="18.464136"
+       font-size="5.6444px"
+       letter-spacing="0px"
+       word-spacing="0px"
+       style="font-size:5.64440012px;line-height:1.25;font-family:Calibri;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.26458001"
+       xml:space="preserve"
+       id="text16844"><tspan
+         x="57.274021"
+         y="18.464136"
+         id="tspan16842">Organisation</tspan></text>
+    <g
+       transform="matrix(0.52917,0,0,0.52917,65.403,0.094494)"
+       id="g16850">
+      <path
+         d="M 0,0 H 24 V 24 H 0 Z"
+         id="path16846"
+         inkscape:connector-curvature="0"
+         style="fill:none" />
+      <path
+         d="m 6.5,10 h -2 v 7 h 2 z m 6,0 h -2 v 7 h 2 z M 21,19 H 2 v 2 h 19 z m -2.5,-9 h -2 v 7 h 2 z M 11.5,3.26 16.71,6 H 6.29 L 11.5,3.26 M 11.5,1 2,6 V 8 H 21 V 6 Z"
+         id="path16848"
+         inkscape:connector-curvature="0" />
+    </g>
+    <text
+       x="1.0286076"
+       y="18.464136"
+       font-size="5.6444px"
+       letter-spacing="0px"
+       word-spacing="0px"
+       style="font-size:5.64440012px;line-height:1.25;font-family:Calibri;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.26458001"
+       xml:space="preserve"
+       id="text16854"><tspan
+         x="1.0286076"
+         y="18.464136"
+         font-size="5.6444px"
+         style="font-size:5.64440012px;font-family:Calibri;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;stroke-width:0.26458001"
+         id="tspan16852">User</tspan></text>
+    <g
+       transform="matrix(0.52917,0,0,0.52917,0.17009,0.18899)"
+       id="g16860">
+      <path
+         d="M 0,0 H 24 V 24 H 0 Z"
+         id="path16856"
+         inkscape:connector-curvature="0"
+         style="fill:none" />
+      <path
+         d="M 12,2 C 6.48,2 2,6.48 2,12 2,17.52 6.48,22 12,22 17.52,22 22,17.52 22,12 22,6.48 17.52,2 12,2 Z M 7.07,18.28 C 7.5,17.38 10.12,16.5 12,16.5 c 1.88,0 4.51,0.88 4.93,1.78 C 15.57,19.36 13.86,20 12,20 10.14,20 8.43,19.36 7.07,18.28 Z M 18.36,16.83 C 16.93,15.09 13.46,14.5 12,14.5 10.54,14.5 7.07,15.09 5.64,16.83 4.62,15.49 4,13.82 4,12 4,7.59 7.59,4 12,4 c 4.41,0 8,3.59 8,8 0,1.82 -0.62,3.49 -1.64,4.83 z M 12,6 C 10.06,6 8.5,7.56 8.5,9.5 8.5,11.44 10.06,13 12,13 13.94,13 15.5,11.44 15.5,9.5 15.5,7.56 13.94,6 12,6 Z m 0,5 C 11.17,11 10.5,10.33 10.5,9.5 10.5,8.67 11.17,8 12,8 c 0.83,0 1.5,0.67 1.5,1.5 0,0.83 -0.67,1.5 -1.5,1.5 z"
+         id="path16858"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="translate(0,1.5107)"
+       id="g16872">
+      <g
+         transform="matrix(0.26458,0,0,0.26458,31.977,2.5135)"
+         id="g16866">
+        <path
+           d="M 0,0 H 24 V 24 H 0 Z"
+           id="path16862"
+           inkscape:connector-curvature="0"
+           style="fill:none" />
+        <path
+           d="M 22,19 H 16 V 15 H 13.32 C 12.18,17.42 9.72,19 7,19 3.14,19 0,15.86 0,12 0,8.14 3.14,5 7,5 9.72,5 12.17,6.58 13.32,9 H 24 v 6 h -2 z m -4,-2 h 2 v -4 h 2 V 11 H 11.94 L 11.71,10.33 C 11.01,8.34 9.11,7 7,7 4.24,7 2,9.24 2,12 c 0,2.76 2.24,5 5,5 2.11,0 4.01,-1.34 4.71,-3.33 L 11.94,13 H 18 Z M 7,15 C 5.35,15 4,13.65 4,12 4,10.35 5.35,9 7,9 c 1.65,0 3,1.35 3,3 0,1.65 -1.35,3 -3,3 z m 0,-4 c -0.55,0 -1,0.45 -1,1 0,0.55 0.45,1 1,1 0.55,0 1,-0.45 1,-1 0,-0.55 -0.45,-1 -1,-1 z"
+           id="path16864"
+           inkscape:connector-curvature="0" />
+      </g>
+      <text
+         x="28.442709"
+         y="13.990325"
+         font-size="1.4111px"
+         letter-spacing="0px"
+         word-spacing="0px"
+         style="font-size:1.41110003px;line-height:1.25;font-family:Calibri;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.26458001"
+         xml:space="preserve"
+         id="text16870"><tspan
+           x="28.442709"
+           y="13.990325"
+           font-size="4.2333px"
+           style="font-size:4.23330021px;font-family:Calibri;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;stroke-width:0.26458001"
+           id="tspan16868">Account</tspan></text>
+    </g>
+    <g
+       transform="translate(-0.068261,27.17)"
+       id="g16884">
+      <text
+         x="57.274021"
+         y="18.464136"
+         font-size="5.6444px"
+         letter-spacing="0px"
+         word-spacing="0px"
+         style="font-size:5.64440012px;line-height:1.25;font-family:Calibri;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.26458001"
+         xml:space="preserve"
+         id="text16876"><tspan
+           x="57.274021"
+           y="18.464136"
+           id="tspan16874">Organisation</tspan></text>
+      <g
+         transform="matrix(0.52917,0,0,0.52917,65.403,0.094494)"
+         id="g16882">
+        <path
+           d="M 0,0 H 24 V 24 H 0 Z"
+           id="path16878"
+           inkscape:connector-curvature="0"
+           style="fill:none" />
+        <path
+           d="m 6.5,10 h -2 v 7 h 2 z m 6,0 h -2 v 7 h 2 z M 21,19 H 2 v 2 h 19 z m -2.5,-9 h -2 v 7 h 2 z M 11.5,3.26 16.71,6 H 6.29 L 11.5,3.26 M 11.5,1 2,6 V 8 H 21 V 6 Z"
+           id="path16880"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <g
+       transform="translate(-0.068261,28.681)"
+       id="g16896">
+      <g
+         transform="matrix(0.26458,0,0,0.26458,31.977,2.5135)"
+         id="g16890">
+        <path
+           d="M 0,0 H 24 V 24 H 0 Z"
+           id="path16886"
+           inkscape:connector-curvature="0"
+           style="fill:none" />
+        <path
+           d="M 22,19 H 16 V 15 H 13.32 C 12.18,17.42 9.72,19 7,19 3.14,19 0,15.86 0,12 0,8.14 3.14,5 7,5 9.72,5 12.17,6.58 13.32,9 H 24 v 6 h -2 z m -4,-2 h 2 v -4 h 2 V 11 H 11.94 L 11.71,10.33 C 11.01,8.34 9.11,7 7,7 4.24,7 2,9.24 2,12 c 0,2.76 2.24,5 5,5 2.11,0 4.01,-1.34 4.71,-3.33 L 11.94,13 H 18 Z M 7,15 C 5.35,15 4,13.65 4,12 4,10.35 5.35,9 7,9 c 1.65,0 3,1.35 3,3 0,1.65 -1.35,3 -3,3 z m 0,-4 c -0.55,0 -1,0.45 -1,1 0,0.55 0.45,1 1,1 0.55,0 1,-0.45 1,-1 0,-0.55 -0.45,-1 -1,-1 z"
+           id="path16888"
+           inkscape:connector-curvature="0" />
+      </g>
+      <text
+         x="28.442709"
+         y="13.990325"
+         font-size="1.4111px"
+         letter-spacing="0px"
+         word-spacing="0px"
+         style="font-size:1.41110003px;line-height:1.25;font-family:Calibri;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.26458001"
+         xml:space="preserve"
+         id="text16894"><tspan
+           x="28.442709"
+           y="13.990325"
+           font-size="4.2333px"
+           style="font-size:4.23330021px;font-family:Calibri;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;stroke-width:0.26458001"
+           id="tspan16892">Account</tspan></text>
+    </g>
+    <g
+       id="g16908"
+       style="fill:none;stroke:#000000">
+      <path
+         d="M 14.458,8.2262 H 27.593"
+         id="path16898"
+         inkscape:connector-curvature="0"
+         style="stroke-width:0.26499999;marker-end:url(#Arrow1Lend)" />
+      <g
+         id="g16906"
+         style="stroke-width:0.26458001px">
+        <path
+           d="M 14.458,20.699 27.026,34.59"
+           id="path16900"
+           inkscape:connector-curvature="0"
+           style="marker-end:url(#marker1477)" />
+        <path
+           d="M 43.278,7.6592 H 55.562"
+           id="path16902"
+           inkscape:connector-curvature="0"
+           style="marker-end:url(#marker1513)" />
+        <path
+           d="M 43.562,34.968 H 56.319"
+           id="path16904"
+           inkscape:connector-curvature="0"
+           style="marker-end:url(#marker1555)" />
+      </g>
+    </g>
   </g>
-  <text x="1.0286076" y="18.464136" fill="#000000" font-family="Calibri" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="1.0286076" y="18.464136" font-family="Calibri" font-size="5.6444px" stroke-width=".26458" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">User</tspan></text>
-  <g transform="matrix(.52917 0 0 .52917 .17009 .18899)">
-   <path d="m0 0h24v24h-24z" fill="none"/>
-   <path d="m12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm-4.93 16.28c0.43-0.9 3.05-1.78 4.93-1.78s4.51 0.88 4.93 1.78c-1.36 1.08-3.07 1.72-4.93 1.72s-3.57-0.64-4.93-1.72zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93 0.59-6.36 2.33c-1.02-1.34-1.64-3.01-1.64-4.83 0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-0.62 3.49-1.64 4.83zm-6.36-10.83c-1.94 0-3.5 1.56-3.5 3.5s1.56 3.5 3.5 3.5 3.5-1.56 3.5-3.5-1.56-3.5-3.5-3.5zm0 5c-0.83 0-1.5-0.67-1.5-1.5s0.67-1.5 1.5-1.5 1.5 0.67 1.5 1.5-0.67 1.5-1.5 1.5z"/>
-  </g>
-  <g transform="translate(0 1.5107)">
-   <g transform="matrix(.26458 0 0 .26458 31.977 2.5135)">
-    <path d="m0 0h24v24h-24z" fill="none"/>
-    <path d="m22 19h-6v-4h-2.68c-1.14 2.42-3.6 4-6.32 4-3.86 0-7-3.14-7-7s3.14-7 7-7c2.72 0 5.17 1.58 6.32 4h10.68v6h-2zm-4-2h2v-4h2v-2h-10.06l-0.23-0.67c-0.7-1.99-2.6-3.33-4.71-3.33-2.76 0-5 2.24-5 5s2.24 5 5 5c2.11 0 4.01-1.34 4.71-3.33l0.23-0.67h6.06zm-11-2c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3zm0-4c-0.55 0-1 0.45-1 1s0.45 1 1 1 1-0.45 1-1-0.45-1-1-1z"/>
-   </g>
-   <text x="28.442709" y="13.990325" fill="#000000" font-family="Calibri" font-size="1.4111px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="28.442709" y="13.990325" font-family="Calibri" font-size="4.2333px" stroke-width=".26458" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Account</tspan></text>
-  </g>
-  <g transform="translate(-.068261 27.17)">
-   <text x="57.274021" y="18.464136" fill="#000000" font-family="Calibri" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="57.274021" y="18.464136">Organisation</tspan></text>
-   <g transform="matrix(.52917 0 0 .52917 65.403 .094494)">
-    <path d="m0 0h24v24h-24z" fill="none"/>
-    <path d="m6.5 10h-2v7h2zm6 0h-2v7h2zm8.5 9h-19v2h19zm-2.5-9h-2v7h2zm-7-6.74 5.21 2.74h-10.42l5.21-2.74m0-2.26-9.5 5v2h19v-2z"/>
-   </g>
-  </g>
-  <g transform="translate(-.068261 28.681)">
-   <g transform="matrix(.26458 0 0 .26458 31.977 2.5135)">
-    <path d="m0 0h24v24h-24z" fill="none"/>
-    <path d="m22 19h-6v-4h-2.68c-1.14 2.42-3.6 4-6.32 4-3.86 0-7-3.14-7-7s3.14-7 7-7c2.72 0 5.17 1.58 6.32 4h10.68v6h-2zm-4-2h2v-4h2v-2h-10.06l-0.23-0.67c-0.7-1.99-2.6-3.33-4.71-3.33-2.76 0-5 2.24-5 5s2.24 5 5 5c2.11 0 4.01-1.34 4.71-3.33l0.23-0.67h6.06zm-11-2c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3zm0-4c-0.55 0-1 0.45-1 1s0.45 1 1 1 1-0.45 1-1-0.45-1-1-1z"/>
-   </g>
-   <text x="28.442709" y="13.990325" fill="#000000" font-family="Calibri" font-size="1.4111px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="28.442709" y="13.990325" font-family="Calibri" font-size="4.2333px" stroke-width=".26458" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Account</tspan></text>
-  </g>
-  <g fill="none" stroke="#000">
-   <path d="m14.458 8.2262h13.135" marker-end="url(#Arrow1Lend)" stroke-width=".265"/>
-   <g stroke-width=".26458px">
-    <path d="m14.458 20.699 12.568 13.891" marker-end="url(#marker1477)"/>
-    <path d="m43.278 7.6592h12.284" marker-end="url(#marker1513)"/>
-    <path d="m43.562 34.968h12.757" marker-end="url(#marker1555)"/>
-   </g>
-  </g>
- </g>
 </svg>
