@@ -162,4 +162,8 @@ https://sovrin.org/wp-content/uploads/2018/03/How-Sovrin-Works.pdf
 
 4:00am: First section of COVID-19 workflow. Bed
 
-10:00am: Second section of COVID-19 workflow.
+10:00am: Second section of COVID-19 workflow. Vaccine Passports.
+
+11:20am: Finish Section on Identity Framework Risks
+
+12:10pm: Finish Summary Section

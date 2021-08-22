@@ -1,13 +1,13 @@
 # 21st Century Identity, Privacy and Data Management
 
-A Digital identity revolution is coming. Self-Sovereign Identity (SSI) is a complete inversion of current identity management, giving granular control of personal data to the user. This has exciting and broad ramifications for user privacy, data collection and data transfer. How can governments and organisations  both facilitate and make use of this new model of identity and user privacy?
+A Digital identity evolution is coming. Self-Sovereign Identity (SSI) is a complete inversion of current identity management, giving granular control of personal data to the user. This has exciting and broad ramifications for user privacy, data collection and data transfer. How can governments and organisations  both facilitate and make use of this new model of identity and user privacy?
 
 This document is broken down into chapters.
 - Chapter one explains digital identities and how they have evolved over time.
 - Chapter two explores current issues with identity and personal data management. 
 - Chapter three investigates current Self-Sovereign Identity software solutions and initiatives.
 - Chapter four looks at government datasets and data flows and how they could be implemented through a SSI framework.
-- Chapter five summarises the findings.
+- Chapter five summarises Self-Sovereign Identity and the effect it could have government processes.
 
 # Chapter One: The Evolution of Identity
 
@@ -51,7 +51,7 @@ This identity management is seen in technologies such as OpenID, OAuth and Faceb
 
 Drummond Reed at Evernym defines SSI as a “lifetime portable identity for any person, organisation, or thing that does not depend on any centralised authority and can never be taken away". Self-Sovereign Identity expands upon User-Centric Identity idea - placing the user directly in control of their own credentials in a digital wallet. 
 
-**Issuers** can provide credentials that can be placed in the wallet. These credentials can then be broken up into sub-parts and sent to **organisations**. Organisations can then verify these credentials independently by querying the blockchain. 
+**Issuers** can provide credentials that can be placed in the wallet. These credentials can then be broken up into sub-parts and sent to **organisations**. Organisations can then verify these credentials independently by querying the blockchain. Credentials can also be marked as **revoked** after a certain time period, indicating that the data cannot no longer be treated as verified. Revocation can be done anonymously on the ledger so that third-parties cannot determine when credentials have expired. 
 
 #### 1.2.4.1 Self-Sovereign Example: 
 
@@ -60,7 +60,6 @@ A user wishes to enter a bar which requires the user to be over the age of 18. T
 The specific workings of this technology will be expanded in the following sections. 
 
 ### 1.2.5 Chapter References: 
-
 
 Christopher Allen, 2016. "[The Path to Self-Sovereign Identity](http://www.lifewithalacrity.com/2016/04/the-path-to-self-soverereign-identity.html)"
 
@@ -82,12 +81,16 @@ John Phillips. Interview. 2018. Australian Payments Summit. "[Self Sovereign Ide
 Large Centralised Identity providers have access to millions of digital identities which makes them a target. (For example Yahoo and Equifax Data Breaches.)
 
 ### 2.1.2 Lack Of Transparency 
-How is user data being used? (Is it marketing? Political Analysis?).  Is it being transferred to additional third parties?  (Facebook–Cambridge Analytica data scandal)
+How is user data being used? (Marketing? Political Analysis?).  Is it being transferred to additional third parties?  (Facebook–Cambridge Analytica data scandal)
 
 ### 2.1.3 Re-Identification of other Data Sets
 By cross-referencing information contained in their databases, centralised providers may be able to reidentify existing public datasets. 
 
 In fact the government has been using CSIRO Data61's Personal Information Factor(PIF) tool to analyse all publicly provided datasets risk of de-identification and apply appropriate levels of protection before the data is released.
+
+### 2.1.4 Indigenous Data Sovereignty
+
+Data may be collected under the pretence of one purpose (improving the community and facilities) but then be used as justification for another ulterior unpopular purpose (liquor-free areas). This has caused friction between government and communities. 
 
 References:
 
@@ -173,7 +176,8 @@ Dataset: [Australian Skills Classification data](https://www.nationalskillscommi
 
 ## 4.2 Covid-19 
 
-The current check-in system relies on the user scanning the QR code on entry. The user's name and phone-number are then uploaded to an unknown system. The user then relies on the government taking proper data security precautions with the invaluable location data and also preventing it from being accessed by third parties or even other departments. There has been issues where police have requested access to use this health data for investigations. 
+The current check-in system relies on the user scanning the QR code on entry. The user's name and phone-number are then uploaded to an unknown system. The user then relies on the government taking proper data security precautions with the invaluable location data and also preventing it from being accessed by third parties or even other departments. There has been issues where police have requested access to use this health data for investigations. The shear number of check-ins (326804746!) and deletions (275831042
+!) is illustrated in Data SA's COVID SAfe Check-Ins. All of these check-ins have to be securely managed.
 
 Let's now imagine how this system could be implemented when a self-sovereign identity system. In a basic naive implementation, it would work almost identically to how it does now. Your phone would pull up your identity credentials (such a one provided by your driver's license) and automatically fill in the store login proof request and send that proof to the current QR tracking system. 
 
@@ -202,7 +206,9 @@ These can easily be turned into a request for proof against the user's private w
 
 This exposure list site could also be used as a verification step when entering sensitive locations. When entering a hospital at the moment, a list of the current exposure sites is located at the entrance. The person at the desk then asks if you've been to any of these locations recently, and it's up to person to quickly parse all of the locations and work out if they've been to any of them. Instead a request for proof could be quickly compared against the user's digital wallet and it would immediately flag any potential crossover between the user's location data and the exposure sites - again without any unnecessary communication of private information. 
 
-Dataset: [All Victorian SARS-CoV-2 (COVID-19) current exposure sites](https://discover.data.vic.gov.au/dataset/all-victorian-sars-cov-2-covid-19-current-exposure-sites)
+Dataset: DATA VIC [All Victorian SARS-CoV-2 (COVID-19) current exposure sites](https://discover.data.vic.gov.au/dataset/all-victorian-sars-cov-2-covid-19-current-exposure-sites)
+
+Dataset: Data SA. [COVID SAfe Check-Ins](https://data.sa.gov.au/data/dataset/covid-safe-checkins)
 
 ## 4.3 Vaccine Passport
 
@@ -213,10 +219,19 @@ When the user wishes to attend an event, airline or a workplace which has a vacc
 References: 
 "[Immunity credentials using self-sovereign identity for combating COVID-19 pandemic](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7983450/)"
 
-# Summary
+# Chapter Five: Summary
+
+Self Sovereign Identity could be a major revolution of how identity and private data is accessed and verified. Governments currently have huge overheads and privacy concerns when operating with citizen data. Self-Sovereign Identity could be used to alleviate these concerns by storing all user data in a secure decentralised encrypted form which could be requested when needed. 
+
+Credentials and Verification from a government perspective: Instant verification of Driver's Licenses, Passports, Vaccine Information and Medical History along with automatic prefill (once authenticated) of data into forms and other data sharing situations. All data can be unified through the publication of standardised government schemas. 
+
+Credentials and Verification from an business and organisation perspective: Academic Transcripts, Job Status, Accredited Skill-sets, Age Restrictions.. can then be automatically prefilled into proof requests such as Job Applications, Loan Applications and Tax Information.
+
+Credentials can be mixed and matched for purpose, only revealing required information and privacy can be audited by tracking proof requests and other transfer of private data. Credentials can be revoked if necessary through the ledger. 
+
+The ledger is publicly available and verification is not facilitated by one corporation or government department. As evidenced by the Bitcoin movement, the ledger is cryptographically secure and provides a safe way to store decentralised data. 
+
+Further application layers can be built on top of the credentials. Once identity is securely established further communication can be performed such as sharing additional information through off-ledger communication such as surveys, census and other data-collection which would be inherently move valuable as there is a public verification of claims. 
 
 
 
-<sup id="a1">[1](#identrev)</sup>
-
-<a id="identrev">1</a>: This is a footnote.[↩](#a1)
